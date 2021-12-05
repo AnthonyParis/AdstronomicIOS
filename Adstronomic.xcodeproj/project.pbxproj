@@ -13,6 +13,14 @@
 		3F807609275CEDB6006DE06E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F807607275CEDB6006DE06E /* Main.storyboard */; };
 		3F80760B275CEDB8006DE06E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F80760A275CEDB8006DE06E /* Assets.xcassets */; };
 		3F80760E275CEDB8006DE06E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F80760C275CEDB8006DE06E /* LaunchScreen.storyboard */; };
+		3F80761F275CF128006DE06E /* Adstronomic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F807616275CF128006DE06E /* Adstronomic.swift */; };
+		3F807620275CF128006DE06E /* BannerAdController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F807617275CF128006DE06E /* BannerAdController.swift */; };
+		3F807621275CF128006DE06E /* InterstitialAdController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F807618275CF128006DE06E /* InterstitialAdController.swift */; };
+		3F807622275CF128006DE06E /* RewardedAdController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F80761A275CF128006DE06E /* RewardedAdController.swift */; };
+		3F807623275CF128006DE06E /* AdType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F80761B275CF128006DE06E /* AdType.swift */; };
+		3F807624275CF128006DE06E /* Adstronomic.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F80761C275CF128006DE06E /* Adstronomic.storyboard */; };
+		3F807625275CF128006DE06E /* AdObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F80761D275CF128006DE06E /* AdObject.swift */; };
+		3F807626275CF128006DE06E /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F80761E275CF128006DE06E /* Configuration.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +32,15 @@
 		3F80760A275CEDB8006DE06E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3F80760D275CEDB8006DE06E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3F80760F275CEDB8006DE06E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F807616275CF128006DE06E /* Adstronomic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Adstronomic.swift; sourceTree = "<group>"; };
+		3F807617275CF128006DE06E /* BannerAdController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BannerAdController.swift; sourceTree = "<group>"; };
+		3F807618275CF128006DE06E /* InterstitialAdController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InterstitialAdController.swift; sourceTree = "<group>"; };
+		3F807619275CF128006DE06E /* AdstronomicFramework.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdstronomicFramework.h; sourceTree = "<group>"; };
+		3F80761A275CF128006DE06E /* RewardedAdController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RewardedAdController.swift; sourceTree = "<group>"; };
+		3F80761B275CF128006DE06E /* AdType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdType.swift; sourceTree = "<group>"; };
+		3F80761C275CF128006DE06E /* Adstronomic.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Adstronomic.storyboard; sourceTree = "<group>"; };
+		3F80761D275CF128006DE06E /* AdObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdObject.swift; sourceTree = "<group>"; };
+		3F80761E275CF128006DE06E /* Configuration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +57,7 @@
 		3F8075F5275CEDB6006DE06E = {
 			isa = PBXGroup;
 			children = (
+				3F807615275CF0D2006DE06E /* Adstronomic SDK */,
 				3F807600275CEDB6006DE06E /* Adstronomic */,
 				3F8075FF275CEDB6006DE06E /* Products */,
 			);
@@ -65,6 +83,22 @@
 				3F80760F275CEDB8006DE06E /* Info.plist */,
 			);
 			path = Adstronomic;
+			sourceTree = "<group>";
+		};
+		3F807615275CF0D2006DE06E /* Adstronomic SDK */ = {
+			isa = PBXGroup;
+			children = (
+				3F80761D275CF128006DE06E /* AdObject.swift */,
+				3F80761C275CF128006DE06E /* Adstronomic.storyboard */,
+				3F807616275CF128006DE06E /* Adstronomic.swift */,
+				3F807619275CF128006DE06E /* AdstronomicFramework.h */,
+				3F80761B275CF128006DE06E /* AdType.swift */,
+				3F807617275CF128006DE06E /* BannerAdController.swift */,
+				3F80761E275CF128006DE06E /* Configuration.swift */,
+				3F807618275CF128006DE06E /* InterstitialAdController.swift */,
+				3F80761A275CF128006DE06E /* RewardedAdController.swift */,
+			);
+			path = "Adstronomic SDK";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,6 +158,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F807624275CF128006DE06E /* Adstronomic.storyboard in Resources */,
 				3F80760E275CEDB8006DE06E /* LaunchScreen.storyboard in Resources */,
 				3F80760B275CEDB8006DE06E /* Assets.xcassets in Resources */,
 				3F807609275CEDB6006DE06E /* Main.storyboard in Resources */,
@@ -137,9 +172,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F807622275CF128006DE06E /* RewardedAdController.swift in Sources */,
+				3F807621275CF128006DE06E /* InterstitialAdController.swift in Sources */,
+				3F807620275CF128006DE06E /* BannerAdController.swift in Sources */,
 				3F807606275CEDB6006DE06E /* ViewController.swift in Sources */,
 				3F807602275CEDB6006DE06E /* AppDelegate.swift in Sources */,
 				3F807604275CEDB6006DE06E /* SceneDelegate.swift in Sources */,
+				3F807626275CF128006DE06E /* Configuration.swift in Sources */,
+				3F807623275CF128006DE06E /* AdType.swift in Sources */,
+				3F80761F275CF128006DE06E /* Adstronomic.swift in Sources */,
+				3F807625275CF128006DE06E /* AdObject.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,6 +331,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8S88Z4JBE6;
 				INFOPLIST_FILE = Adstronomic/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -308,6 +351,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8S88Z4JBE6;
 				INFOPLIST_FILE = Adstronomic/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

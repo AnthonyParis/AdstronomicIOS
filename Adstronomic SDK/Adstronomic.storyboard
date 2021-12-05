@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Interstitial-->
+        <scene sceneID="fTo-vl-6sC">
+            <objects>
+                <viewController storyboardIdentifier="InterstitialAdController" title="Interstitial" useStoryboardIdentifierAsRestorationIdentifier="YES" id="v1K-BV-rka" customClass="InterstitialAdController" customModule="My_Super_Game" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="eJI-96-X69">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cVb-Wd-8Uy">
+                                <rect key="frame" x="0.0" y="44" width="428" height="848"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lJ3-vQ-OAr" userLabel="Overlay Button">
+                                <rect key="frame" x="0.0" y="44" width="428" height="848"/>
+                                <connections>
+                                    <action selector="openStoreLink:" destination="v1K-BV-rka" eventType="touchUpInside" id="hrf-ng-3Jz"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ujZ-Ja-tjH">
+                                <rect key="frame" x="29" y="40" width="36" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="contentEdgeInsets" minX="6" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" backgroundImage="xmark.circle.fill" catalog="system">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="CloseAd:" destination="v1K-BV-rka" eventType="touchUpInside" id="1dJ-lL-gsp"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="JvS-MU-i91"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="JvS-MU-i91" firstAttribute="trailing" secondItem="cVb-Wd-8Uy" secondAttribute="trailing" id="8fR-bJ-7G4"/>
+                            <constraint firstItem="cVb-Wd-8Uy" firstAttribute="centerY" secondItem="JvS-MU-i91" secondAttribute="centerY" id="A8e-YE-IsZ"/>
+                            <constraint firstItem="lJ3-vQ-OAr" firstAttribute="centerX" secondItem="JvS-MU-i91" secondAttribute="centerX" id="AYz-57-CDw"/>
+                            <constraint firstItem="JvS-MU-i91" firstAttribute="bottom" secondItem="lJ3-vQ-OAr" secondAttribute="bottom" id="D9B-wo-F2y"/>
+                            <constraint firstItem="JvS-MU-i91" firstAttribute="trailing" secondItem="lJ3-vQ-OAr" secondAttribute="trailing" id="FdP-fp-NE3"/>
+                            <constraint firstItem="cVb-Wd-8Uy" firstAttribute="top" secondItem="JvS-MU-i91" secondAttribute="top" id="NO7-hD-n0H"/>
+                            <constraint firstItem="JvS-MU-i91" firstAttribute="top" secondItem="lJ3-vQ-OAr" secondAttribute="top" id="k5O-EE-HJ2"/>
+                            <constraint firstItem="lJ3-vQ-OAr" firstAttribute="leading" secondItem="JvS-MU-i91" secondAttribute="leading" id="nKD-n9-Yw2"/>
+                            <constraint firstItem="cVb-Wd-8Uy" firstAttribute="centerX" secondItem="JvS-MU-i91" secondAttribute="centerX" id="orR-yL-0JE"/>
+                            <constraint firstItem="lJ3-vQ-OAr" firstAttribute="centerY" secondItem="JvS-MU-i91" secondAttribute="centerY" id="teF-Ob-R2V"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="UIAdImage" destination="cVb-Wd-8Uy" id="lcR-LY-qAo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yjW-sd-Ym3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1218.2242990654204" y="137.36501079913609"/>
+        </scene>
+        <!--Rewarded-->
+        <scene sceneID="tPb-fx-bMM">
+            <objects>
+                <viewController storyboardIdentifier="RewardedAdController" title="Rewarded" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Zqf-eJ-ORh" customClass="RewardedAdController" customModule="My_Super_Game" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dQl-6b-4am">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="8wf-34-C1O">
+                                <rect key="frame" x="0.0" y="44" width="428" height="848"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="22x-Eq-DxL" userLabel="Overlay Button">
+                                <rect key="frame" x="0.0" y="44" width="428" height="848"/>
+                                <connections>
+                                    <action selector="openStoreLink:" destination="Zqf-eJ-ORh" eventType="touchUpInside" id="vJH-qB-Uoa"/>
+                                </connections>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MeZ-Ep-G99">
+                                <rect key="frame" x="29" y="40" width="36" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="contentEdgeInsets" minX="6" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" backgroundImage="xmark.circle.fill" catalog="system">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="CloseAd:" destination="Zqf-eJ-ORh" eventType="touchUpInside" id="kMB-ae-AZp"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="10 seconds remaining" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="15v-ZK-XcS">
+                                <rect key="frame" x="29" y="46" width="158" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="A3k-eK-UMc"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="8wf-34-C1O" firstAttribute="centerX" secondItem="A3k-eK-UMc" secondAttribute="centerX" id="22i-VW-GlA"/>
+                            <constraint firstItem="8wf-34-C1O" firstAttribute="centerY" secondItem="A3k-eK-UMc" secondAttribute="centerY" id="7Bx-6X-845"/>
+                            <constraint firstItem="22x-Eq-DxL" firstAttribute="centerX" secondItem="A3k-eK-UMc" secondAttribute="centerX" id="Gxn-dS-FEQ"/>
+                            <constraint firstItem="22x-Eq-DxL" firstAttribute="leading" secondItem="A3k-eK-UMc" secondAttribute="leading" id="QXR-8B-xzu"/>
+                            <constraint firstItem="A3k-eK-UMc" firstAttribute="bottom" secondItem="22x-Eq-DxL" secondAttribute="bottom" id="VyV-cJ-Iip"/>
+                            <constraint firstItem="A3k-eK-UMc" firstAttribute="trailing" secondItem="22x-Eq-DxL" secondAttribute="trailing" id="bAu-Bh-54l"/>
+                            <constraint firstItem="8wf-34-C1O" firstAttribute="top" secondItem="A3k-eK-UMc" secondAttribute="top" id="gpu-st-euT"/>
+                            <constraint firstItem="22x-Eq-DxL" firstAttribute="top" secondItem="A3k-eK-UMc" secondAttribute="top" id="kOe-gi-CsH"/>
+                            <constraint firstItem="22x-Eq-DxL" firstAttribute="centerY" secondItem="A3k-eK-UMc" secondAttribute="centerY" id="tvI-aF-L5B"/>
+                            <constraint firstItem="A3k-eK-UMc" firstAttribute="trailing" secondItem="8wf-34-C1O" secondAttribute="trailing" id="zGZ-AP-CfL"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="UIAdImage" destination="8wf-34-C1O" id="IAq-Xr-MrV"/>
+                        <outlet property="countDownLabel" destination="15v-ZK-XcS" id="nGJ-pN-n2p"/>
+                        <outlet property="skipButton" destination="MeZ-Ep-G99" id="9Ps-g3-bnn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8jp-SS-VmE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1217" y="823"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="xmark.circle.fill" catalog="system" width="128" height="121"/>
+    </resources>
+</document>
