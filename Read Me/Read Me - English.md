@@ -30,15 +30,15 @@ As an iOS developer, you are probably familiar with Xcode, Apple's default devel
 
 Start by choosing "iOS" in the top menu, then select "App". You can use any name and Organization Identifier you want. However, make sure you have selected the "Storyboard" interface, the "UIKit App Delegate" life cycle and the "Swift" language.
 
-<img src="1.png" alt="Adstronomic-iOS-1" style="zoom:25%;" />
+<img src="https://raw.githubusercontent.com/AnthonyParis/AdstronomicIOS/master/Read%20Me/1.png" alt="Adstronomic-iOS-1" style="zoom:25%;" />
 
-<img src="2.png" alt="Adstronomic-iOS-2" style="zoom:25%;" />
+<img src="https://raw.githubusercontent.com/AnthonyParis/AdstronomicIOS/master/Read%20Me/2.png" alt="Adstronomic-iOS-2" style="zoom:25%;" />
 
 As you are starting from an empty project, you will have to add the SDK manually. To do this, clone this project, find the "Adstronomic SDK" folder, and copy its contents, which are nine files. Go back to Xcode, and create a new group (I kept the name "Adstronomic SDK", but you can rename it) in your project, into which you paste these nine files. Note that copy and paste may not work in some cases, and you will have to replace it with drag and drop.
 
 You should normally have a tree structure like this :
 
-<img src="3.png" alt="Adstronomic-iOS-3" style="zoom:25%;" />
+<img src="https://raw.githubusercontent.com/AnthonyParis/AdstronomicIOS/master/Read%20Me/3.png" alt="Adstronomic-iOS-3" style="zoom:25%;" />
 
 Congratulations ! You've just added Adstronomic to your project ! 🥳 The next step is now to configure it !
 
@@ -131,11 +131,11 @@ A BannerAd is simply an advertisement in the form of an image, usually displayed
 
 In Adstronomic, these ads are represented by classic images, of type UIImageView. So we will manually add one to our project. To do this, open the "Main.storyboard" file.
 
-<img src="4.png" alt="Adstronomic-iOS-4" style="zoom: 25%;" />
+<img src="https://raw.githubusercontent.com/AnthonyParis/AdstronomicIOS/master/Read%20Me/4.png" alt="Adstronomic-iOS-4" style="zoom: 25%;" />
 
 If you open this file for the first time, you should normally see a blank screen. This is normal ! I have added a StackView to my project containing a Label, and three Buttons, but they are optional at this stage. We will only need to add a UIImageView, like this:
 
-<img src="5.png" alt="Adstronomic-iOS-5" style="zoom:25%;" />
+<img src="https://raw.githubusercontent.com/AnthonyParis/AdstronomicIOS/master/Read%20Me/5.png" alt="Adstronomic-iOS-5" style="zoom:25%;" />
 
 Now that we have our UIImageView on our stage, we just need to retrieve it from the ViewController.swift file, by dragging it. Once this is done, your ad is ready to be loaded.
 
@@ -180,7 +180,7 @@ class ViewController: UIViewController {
 
 We can now launch our application, and see the result. When we click on the button, the ad is loaded, and is displayed at the bottom of our application.
 
-<img src="6.png" alt="Adstronomic-iOS-6" style="zoom:25%;" />
+<img src="https://raw.githubusercontent.com/AnthonyParis/AdstronomicIOS/master/Read%20Me/6.png" alt="Adstronomic-iOS-6" style="zoom:25%;" />
 
 
 
@@ -190,7 +190,7 @@ We can now launch our application, and see the result. When we click on the butt
 
 If you have successfully displayed a Banner Ad, you should have no difficulty in displaying Interstitial Ad and Rewarded Ad, as they are used almost the same way. Let's go back to the Main.storyboard, and this time add an AVKit Player View Controller. This is the equivalent of a UIImageView, for videos.
 
-<img src="7.png" alt="Adstronomic-iOS-7" style="zoom:25%;" />
+<img src="https://raw.githubusercontent.com/AnthonyParis/AdstronomicIOS/master/Read%20Me/7.png" alt="Adstronomic-iOS-7" style="zoom:25%;" />
 
 Note that this is a bit of a special component, as it will take up all the space of your scene, and should therefore be placed next to your scene, so as not to hide it.
 
@@ -252,7 +252,7 @@ class ViewController: UIViewController {
 
 We use the second button in the storyboard, and intercept its click in order to execute the few lines I indicated just before. By launching the application, and clicking on the corresponding button, our video ad should appear in full screen.
 
-<img src="8.png" alt="Adstronomic-iOS-8" style="zoom:25%;" />
+<img src="https://raw.githubusercontent.com/AnthonyParis/AdstronomicIOS/master/Read%20Me/8.png" alt="Adstronomic-iOS-8" style="zoom:25%;" />
 
 
 
