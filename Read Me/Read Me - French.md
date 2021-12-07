@@ -1,4 +1,4 @@
-## [**🇫🇷 ENGLISH VERSION AVAILABLE 🇫🇷**](https://github.com/AnthonyParis/AdstronomicIOS/blob/master/Read%20Me/Read%20Me%20-%20English.md)
+## [**🇺🇸 ENGLISH VERSION AVAILABLE 🇺🇸**](https://github.com/AnthonyParis/AdstronomicIOS/blob/master/Read%20Me/Read%20Me%20-%20English.md)
 
 
 
